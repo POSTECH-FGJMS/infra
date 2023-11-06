@@ -39,7 +39,7 @@ variable "subnet_id4" {
   sensitive   = true
 }
 
-variable "securtiy_group_id" {
+variable "security_group_id" {
   description = "Security Group Id"
   type        = string
   sensitive   = true
