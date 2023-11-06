@@ -26,3 +26,21 @@ variable "subnet_id2" {
   type        = string
   sensitive   = true
 }
+
+variable "subnet_id3" {
+  description = "Subnet Id 3"
+  type        = string
+  sensitive   = true
+}
+
+variable "subnet_id4" {
+  description = "Subnet Id 4"
+  type        = string
+  sensitive   = true
+}
+
+variable "securtiy_group_id" {
+  description = "Security Group Id"
+  type        = string
+  sensitive   = true
+}
