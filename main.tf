@@ -1,6 +1,17 @@
+terraform {
+  backend "s3" {
+    bucket         = "lanchonete-terraform-state"
+    key            = "terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "lanchonete-terraform-state"
+    encrypt        = true
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
 }
+
 
 resource "aws_db_subnet_group" "public_db_subnet_group" {
   name       = "public-db-subnet-group"
