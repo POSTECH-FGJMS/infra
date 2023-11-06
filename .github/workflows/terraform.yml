@@ -19,6 +19,9 @@ jobs:
       TF_VAR_vpc_id: ${{ secrets.VPC_ID }}
       TF_VAR_subnet_id1: ${{ secrets.SUBNET_ID1 }}
       TF_VAR_subnet_id2: ${{ secrets.SUBNET_ID2 }}
+      TF_VAR_subnet_id3: ${{ secrets.SUBNET_ID3 }}
+      TF_VAR_subnet_id4: ${{ secrets.SUBNET_ID4 }}
+      TF_VAR_security_group_id: ${{ secrets.SECURITY_GROUP_ID }}
 
     steps:
       - name: "Checkout"

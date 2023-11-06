@@ -63,7 +63,7 @@ resource "aws_eks_cluster" "lanchonete_cluster" {
 
   vpc_config {
     subnet_ids = [var.subnet_id3, var.subnet_id4]
-    security_group_ids = [ var.securtiy_group_id ]
+    security_group_ids = [ var.security_group_id ]
     endpoint_private_access = true
     endpoint_public_access = true
   }
